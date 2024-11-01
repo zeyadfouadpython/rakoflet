@@ -1,9 +1,10 @@
 from flet import *
 
-def main(page:Page):
-    T = Text('Rakwan ali')
-    page.add(T)
-    
-    page.update()
+def main(page: Page):
+    page.title = "My App"
+    page.window.width=390
+    page.window.height = 740
 
-app(main)
+    # باقي عناصر واجهة المستخدم
+    page.update()
+app(target=main,assets_dir="assets")
